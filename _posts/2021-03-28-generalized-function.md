@@ -12,7 +12,7 @@ header-includes:
 
 **Generalized Function**
 
-Let  \\(\varphi(x)\\)  be an *argument of the functional*, which is a function where $\forall x$, $\varphi(x) \in \mathscr{D}$. 
+Let  \\(\varphi(x)\\)  be an *argument of the functional*, which is a function where $x \in \boldsymbol{R}$, and $\forall x$, $\varphi(x) \in \mathscr{D}$. 
 
 $\varphi(x)$ is *compact*, if it has a bounded *support*. The *support* of a function $\varphi(x)$ is written as $\text{supp}(\varphi)$,  $\text{supp}(\varphi) := \\{x \in \mathit{X} \mid \varphi(x) \ne 0 \\}$
 
@@ -24,7 +24,7 @@ We have the following *linear functional*:
 
 $$T[\varphi(x)] = \int f(x) \varphi(x) dx$$
 
-$T[\cdot]$ maps inputs from $\mathscr{D}$ to $\boldsymbol{R}$ (real numbers).
+$T[\cdot]$ maps inputs from $\mathscr{D}$ to $\boldsymbol{R}$.
 
 Any *linear functional* $T[\varphi]$, which is continuous on the set $\mathscr{D}$ of
 *smooth compact functions*, is called a *generalized function*.
@@ -34,3 +34,5 @@ Any *linear functional* $T[\varphi]$, which is continuous on the set $\mathscr{D
 $\forall \varphi(x), \psi(x) \in \mathscr{D}$, $\forall \alpha, \beta \in \boldsymbol{R}$, we have:
 
 $$T[\alpha \varphi(x) + \beta \psi(x)] = \alpha T[\varphi(x)] + \beta T[\psi(x)]$$
+
+**Regular Generalized Function**
