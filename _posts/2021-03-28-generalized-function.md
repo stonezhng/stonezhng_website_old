@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Generalized funtions and normalizing flows"
 date:   2021-03-28 14:00:00 -0400
 categories: [Math, Algebra, Normalizing Flow]
@@ -29,3 +28,5 @@ $T[\cdot]$ maps inputs from $\mathscr{D}$ to $\boldsymbol{R}$ (real numbers).
 
 Any *linear functional* $T[\varphi]$, which is continuous on the set $\mathscr{D}$ of
 *smooth compact functions*, is called a *generalized function*.
+
+****
