@@ -1,7 +1,7 @@
 ---
-title:  "Generalized funtions and normalizing flows"
+title:  "Generalized funtions"
 date:   2021-03-28 14:00:00 -0400
-categories: [Math, Algebra, Normalizing Flow]
+categories: [Math, Algebra]
 math: true
 header-includes:
   - \usepackage{mathrsfs}
@@ -45,7 +45,7 @@ $$T[a\varphi + b\psi] = a T[\varphi] + b T[\psi]$$
 
 If the kernal $f(x)$ is an everywhere continuous, bounded function, $T[\varphi]$ is called a *regular generalized function* identified with the kernal $f(x)$.
 
-### Singular Generalized Function
+## Singular Generalized Function
 
 A *singular generlized function* $T[\varphi]$ is still linear continuous, but its kernel is not continuous. 
 
@@ -65,9 +65,61 @@ If $\varphi(x) = 1$:
 
 $$\delta [1] = \int \delta(x) dx = 1$$
 
-One personal thought: would it be better to have:
+We can also "shift" the delta function to map the function space to function value at arbitrary points: (again the first $\delta_a$ is a functional delta, the second $\delta$ in the integral is a function delta)
 
-$$\Delta [\varphi] = \int \delta(x) \varphi(x) dx = \varphi(0)$$
+$$\delta_a [\varphi] = \int \delta(x - a) \varphi(x) dx = \varphi(a)$$
+
+One approach to estimate the delta function is by the limit of a sequence of ordinary integrals, where the $k$ th element in the sequence looks like:
+
+$$\delta_k [\varphi] = \int \delta_k(x) \varphi(x) dx$$
+
+$\delta_k(x)$ can be ordinary functions. One choice is the Gaussian probability density function: $\delta_k(x) = \frac{1}{k\sqrt{2 \pi}} e^{-\frac{x^2}{2k^2}}$
+
+## Derivatives of Generalized Function
+
+We define the derivative of a generalized function by the derivative of its kernel functions:
+
+$$T'[\varphi] = \int f'(x) \varphi(x) dx $$
+
+According to the rule of integration by parts, we have:
+
+$$\int f'(x) \varphi(x) dx + \int f(x) \varphi'(x) dx = f(x)\varphi(x) |_{-\infty}^{\infty}$$
+
+Recall that $\varphi(x)$ is compact (has a bounded support), so $\lim_{x \rightarrow \infty}\varphi(x) = 0$, $\lim_{x \rightarrow -\infty}\varphi(x) = 0$, therefore we have:
+
+$$\int f'(x) \varphi(x) dx + \int f(x) \varphi'(x) dx = 0$$
+
+Which means:
+
+$$T'[\varphi] + T[\varphi'] = 0$$
+
+So We can do derivative on $\varphi$ to get the derivative of a generalized function.
+
+With the same logic, we have
+
+$$T^{(n)}[\varphi] = (-1)^nT[\varphi^{(n)}(x)]$$
+
+The Leibniz formula also works on the product of a generalized function and a function. First we have the product of a function and a generalized function defined as:
+
+$$g(x)T[\varphi] = T[g\varphi]$$
+
+Then the Leibniz formula is:
+
+$$(g(x)T[\varphi])' = g'(x)T[\varphi] + g(x)T'[\varphi]$$
+
+$$(g(x)T[\varphi])^{(n)} = \sum^{n}_{m = 0}g^{(m)}(x)T^{(n-m)}[\varphi]$$
+
+This is more like a trick, since the symbol $g'(x)T[\varphi]$ is not an actual product, you just switch between different expressions to make it look like the Leibniz formula :
+
+$$
+\begin{align*}
+(g(x)T[\varphi])' &= T'[g\varphi]
+\\ &= T[(g\varphi)']
+\\ &= T[g'\varphi + g\varphi']
+\\ &= T[g'\varphi] + T[g\varphi']
+\\ &= g'(x)T[\varphi] + g(x)T'[\varphi]
+\end{align*}
+$$
 
 
 
