@@ -75,7 +75,7 @@ $$\delta_k [\varphi] = \int \delta_k(x) \varphi(x) dx$$
 
 $\delta_k(x)$ can be ordinary functions. One choice is the Gaussian probability density function: $\delta_k(x) = \frac{1}{k\sqrt{2 \pi}} e^{-\frac{x^2}{2k^2}}$
 
-## Derivatives of Generalized Function
+# Derivatives of Generalized Function
 
 We define the derivative of a generalized function by the derivative of its kernel functions:
 
@@ -116,10 +116,22 @@ $$
 (g(x)T[\varphi])' &= T'[g\varphi]
 \\ &= T[(g\varphi)']
 \\ &= T[g'\varphi + g\varphi']
-\\ &= T[g'\varphi] + T[g\varphi']
+\\ &= T[g'\varphi] + T[g\varphi']  \text{ (linearity)}
 \\ &= g'(x)T[\varphi] + g(x)T'[\varphi]
 \end{align*}
 $$
+
+#  Generalized Function of a Composite Argument
+
+First we have the following equality:
+
+$$
+\int f(g(x))\varphi(x) dx = \int f(y)\varphi(g^{-1}(y)) g^{-1 \prime} (y) dy
+$$
+
+Where $g^{-1}(x)$ is the inverse of $g(x)$, i.e. $g(g^{-1}(x)) = x$. The above equality can be easily proved by replace $x$ on the left side with $g^{-1}(y)$. 
+
+We name $\int f(g(x))\varphi(x) dx$ as a generalized function $T$ of a *composite argument* $g(x)$.
 
 
 

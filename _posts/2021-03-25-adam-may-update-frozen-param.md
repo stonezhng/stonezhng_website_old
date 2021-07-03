@@ -41,6 +41,11 @@ for p in model.parameters():
 
 ```python
 model = Model()
+
+"""
+load saved model dict
+"""
+
 dataloader = ...
 checkpoint_path = ...
 
