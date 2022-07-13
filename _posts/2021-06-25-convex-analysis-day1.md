@@ -7,7 +7,7 @@ header-includes:
   - \usepackage{mathrsfs}
   - \usepackage{amsbsy}
 ---
-# Relative Interriors of  Convex Sets
+# Interriors of  Convex Sets
 
 We first define the *Euclidean distance* between two points $x$ and $y$ in $R^n$ :
 
@@ -48,3 +48,15 @@ $$
 $$
 
 The closure of $C$ may equivalently be defined as the union of $C$ and its boundary, and also as the intersection of all closed sets containing $C$.
+
+Relative interior of $C$ is defined as the interior which results when $C$ is regarded as a subset of its affine hull aff $C$. It is often more useful when dealing with low-dimensional sets placed in higher-dimensional spaces.
+
+$$
+\begin{equation} \label{ri}
+\text{ri } C = \{x \in \text{aff }C | \exists \epsilon > 0, (x + \epsilon B) \cap (\text{aff }C) \subset C \}
+\end{equation}
+$$
+
+# Closures of Convex Functions
+
+

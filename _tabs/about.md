@@ -6,7 +6,7 @@ order: 1
 
 # Who am I
 
-I am Sidong Zhang, a first year Ph.D student in the [Information Fusion Lab](https://groups.cs.umass.edu/infofusion/home) of Computer Science Department at UMass Amherst, advised by [Prof. Madalina Fiterau](https://www.cics.umass.edu/people/fiterau-brostean-madalina).
+I am Sidong Zhang, a Ph.D student in the [Information Fusion Lab](https://groups.cs.umass.edu/infofusion/home) of Computer Science Department at UMass Amherst, advised by [Prof. Madalina Fiterau](https://www.cics.umass.edu/people/fiterau-brostean-madalina).
 
 My primary research interests are **Computer Vision**, **Deep Learning in Healthcare** and **Interpretability in Machine Learning**. 
 
@@ -24,4 +24,5 @@ Brain MRI                                            |  AD Development
 :---------------------------------------------------:|:-------------------------:
 ![Brain MRI](https://i.ibb.co/pw7ynSg/brain-3d.gif)  |  ![AD Development](https://i.ibb.co/F05vfCF/brain-traj-5.gif)
 
-![Model Structure](https://i.ibb.co/V9XG8Mp/Screen-Shot-2021-03-23-at-3-44-35-PM.png)
+![MI Encoder](https://drive.google.com/uc?id=14OxAH9QuAef48JJJt9O688qcIBh_XuJR)
+![Model Structure](https://drive.google.com/uc?id=10g_a5tDaN6lIYvKvMbXSrTb1HfDGYhq_)
